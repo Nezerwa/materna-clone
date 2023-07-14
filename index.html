@@ -5,18 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="bg-[url('')]">
         <div>
-          <ul class="flex justify-end space-x-6 mr-[80px]">
-            <li>News</li>
-            <li>Contact</li>
+          <ul class="flex justify-end space-x-6 mr-[80px] items-center p-3">
+            <li class="border-r-[1px] border-red-400 pr-5">News</li>
+            <li class="border-r-[1px] border-red-400 pr-5">Contact</li>
             <li>English</li>
           </ul>
         </div>
       </nav>
+      <div
+        class="bg-[url('https://www.materna.com/SharedDocs/Bilder/DE/buehne_startseite.svg?__blob=panorama&v=1')] h-screen bg-center bg-cover relative"
+      >
+        <div
+          class="flex justify-between bg-red-700 w-[70vw] absolute right-[70px] p-3 text-white top-[10px]"
+        >
+          <ul class="flex space-x-6">
+            <li>Portfolio</li>
+            <li>Industries</li>
+            <li>Customers</li>
+            <li>About us</li>
+            <li>Careers</li>
+          </ul>
+          <a href="#" class="bg-red-950 p-2"
+            ><i class="bx bx-search text-white"></i
+          ></a>
+        </div>
+        <div class="absolute left-[100px] top-[-60px]">
+          <img
+            src="src/images/materna-logo.svg"
+            alt=""
+            height="50px"
+            width="190px"
+          />
+        </div>
+
+        <div class="grid grid-cols-4 absolute top-[200px] left-[100px]">
+          <div>
+            <h1 class="text">WE ARE DIGITIZING YOUR WORLD.</h1>
+            <p>
+              As a key globally active IT service provider, we advise and assist
+              you in all aspects of digitization and provide tailor-made
+              technologies for agile, flexible and secure IT.
+            </p>
+          </div>
+          <div id="second">
+            <img src="src/images/card-image.jpg" alt="" />
+            <a href="#">Portfolio</a>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
